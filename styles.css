@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: indianred;
 }
 
 #calculator{
@@ -13,30 +14,50 @@ body{
     flex-wrap: wrap;
     align-items: center;
     background-color: darkgray;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
 #display{
     height: 75px;
     width: 300px;
     border: solid 1px;
-    background-color: white;
+    background-color: azure;
+    box-shadow: inset 2px 2px 2px 2px black;
+    display: flex;
+    justify-content: end;
+    font-size: 3em;
+    align-items: center;
 }
 
 #buttons{
     height: 350px;
     width: 300px;
-    border: solid 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
 }
 
 button{
     height: 70px;
     width: 70px;
+    background-color: lightgray;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.class13{
     background-color: red;
+}
+
+.class4,
+.class8,
+.class12,
+.class15,
+.class16{
+    background-color: black;
     color: white;
 }
 
