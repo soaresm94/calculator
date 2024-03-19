@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: indianred;
 }
 
 #calculator{
@@ -13,6 +14,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
 }
 
 #display{
@@ -20,23 +23,38 @@ body{
     width: 300px;
     border: solid 1px;
     background-color: white;
+    font-size: 4em;
+    display: flex;
+    justify-content: end;
+    background-color: azure;
 }
 
 #buttons{
     height: 350px;
     width: 300px;
-    border: solid 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
 }
 
 button{
     height: 70px;
     width: 70px;
-    background-color: red;
-    color: white;
+    background-color: lightgray;
+    font-size: 2em;
+    border-radius: 10px;
 }
 
+.class13{
+    background-color: red;
+}
+
+.class4,
+.class8,
+.class12,
+.class15,
+.class16{
+    background-color: black;
+    color: white;
+}

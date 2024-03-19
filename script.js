@@ -28,6 +28,8 @@ function divide(a,b){
 // let operator;
 
 let firstNumber = "0";
+let secondNumber = "";
+let operator = "";
 
 function operate(firstNumber,operator,secondNumber){
     if(operator === "+"){
@@ -93,7 +95,8 @@ buttonDiv4.addEventListener("click",()=>{
         secondNumber = Number(displayValue);
         displayValue = "0";
         operator = "+";
-    }});
+    }
+});
 
 const buttonDiv5 = document.querySelector(".class5");
 buttonDiv5.textContent = "4";
@@ -191,7 +194,7 @@ buttonDiv12.addEventListener("click",()=>{
 const buttonDiv13 = document.querySelector(".class13");
 buttonDiv13.textContent = "C";
 buttonDiv13.addEventListener("click",()=>{
-    if(displayValue !== "0"){
+    if((displayValue !== "0")||(display.textContent !== "0")){
         displayValue = "0";
         display.textContent = displayValue
        
@@ -212,10 +215,16 @@ const buttonDiv15 = document.querySelector(".class15");
 buttonDiv15.textContent = "=";
 buttonDiv15.addEventListener("click",()=>{
         secondNumber = Number(displayValue);
+        if(secondNumber === 0){
+            displayValue = "ERROR";
+            display.textContent = displayValue;
+        }else{
         displayValue = operate(firstNumber,operator,secondNumber);
+        displayValue = Math.round(displayValue*10000000)/10000000;
         display.textContent = displayValue;
-    
-});  
+        }
+        operator = "";
+    });  
 
 const buttonDiv16 = document.querySelector(".class16");
 buttonDiv16.textContent = "/";
